@@ -26,7 +26,7 @@ function randomPassword($length=10) {
 
 $my_passwords = randomPassword(12);
 
-echo "<br /><br />\n\nUse the following randomly generated ".strlen(trim($my_passwords))." character password to signon to the Oracle Instance: \n<pre><code>".$my_passwords."</code></pre><br />\n";
+echo "<br /><br />\n\nUse the following randomly generated ".strlen(trim($my_passwords))." character password: \n<pre><code>".$my_passwords."</code></pre><br />\n";
 
 
 ?>
