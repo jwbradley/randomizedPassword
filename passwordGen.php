@@ -17,8 +17,6 @@ function randomPassword($length=10) {
 
         $verified  =  (((preg_match("#[0-9]+#", $pass)) && (preg_match("#[a-z]+#", $pass)) && (preg_match("#[A-Z]+#", $pass)) && (strpbrk($pass, $specials)) && (strlen(trim($pass)) == $length)) ? true : false);
 
-        echo (!$verified ?"<!-- Password Verify Check Failed for [".$pass."], looping again. -->\n" : '');
-
         $looper++;  // Keeps the checker process from looping forever. Shouldn't need this many attempts to get a valid password.
     }
     return $pass; // return the generated & verified password
