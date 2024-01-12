@@ -14,7 +14,7 @@ php -f index.php
 # Sample output
 
 ```
-Used the following randomly generated 12 character password:
+Use the following randomly generated 12 character password:
 
 ewfo_!K32Iyz
 ```
